@@ -21,7 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## Same as above. Used the cacheMean to adapt to cacheSolve
 
 
-cacheSolve <-c function(x, ...) {
+cacheSolve <- function(x, ...) {
   m <- x$getinv()
   if(!is.null(m)) {
     message("getting cached data")
